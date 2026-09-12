@@ -147,6 +147,7 @@ The taxonomy tree (Class, Order, Family) is CC0 Public Domain. To fetch taxonomy
 ```bash
 go run ./cmd/fetch-gbif
 ```
+Lookups use the full binomial and are constrained to Animalia, because a genus name is only unique within a kingdom: *Antigone* is a crane and a venus clam, *Microtarsus* a bulbul and an aphid. A binomial the backbone does not carry is retried as the legacy names `aliases.json` maps to it, then as the genus, which is accepted only when every equally exact hit agrees on the class. Whatever is still unresolved keeps its current taxonomy and is listed in `data/validation/gbif_ambiguous.json` for a hand-checked decision.
 
 To extract authoritative iNaturalist taxonomy URLs without querying their rate-limited API (streams directly from AWS Open Data):
 ```bash

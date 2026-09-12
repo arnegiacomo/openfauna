@@ -1,0 +1,33 @@
+{
+  "_comment": "Species whose binomial is absent from the GBIF Backbone and whose genus is a homonym spanning more than one class. GBIF cannot disambiguate these, so their taxonomy is left untouched and each needs a hand-checked entry. Written by cmd/fetch-gbif.",
+  "species": {
+    "Artamus leucorynchus": [
+      "Arachnida",
+      "Aves"
+    ],
+    "Gastrotheca coeruleomaculata": [
+      "Amphibia",
+      "Insecta"
+    ],
+    "Microtarsus fuscoflavescens": [
+      "Aves",
+      "Insecta"
+    ],
+    "Microtarsus nieuwenhuisii": [
+      "Aves",
+      "Insecta"
+    ],
+    "Monticola cinclorhyncha": [
+      "Arachnida",
+      "Aves"
+    ],
+    "Ololygon arduoa": [
+      "Amphibia",
+      "Aves"
+    ],
+    "Ortalis guttata": [
+      "Aves",
+      "Insecta"
+    ]
+  }
+}
